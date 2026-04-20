@@ -1,0 +1,247 @@
+body, html {
+  height: 100;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  font-family: Arial, sans-serif;
+  background-color: #a9b388;
+  color: #5F6F52;
+}
+/* Navbar */
+nav {
+  background-color:#5F6F52;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  color:#5F6F52;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+nav a:hover {
+  color:  #a9b388;
+}
+/* Menü */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  position: relative;
+  margin: 0 15px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fefae0;
+  padding: 10px;
+}
+#content{
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(95, 111, 82, 0.2);
+}
+/* Footer */
+footer {
+  background-color: #5F6F52;
+  color: #fefae0;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* anasayfa*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; 
+  
+  max-width: 1000px; 
+  margin: 30px auto 40px; 
+  padding: 0 20px; 
+}
+
+.grid-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08); 
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+/*
+.add-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #5F6F52;
+  color: #fefae0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #4a5942;
+}
+*/
+/*login*/
+.btn-primary {
+  background-color: #a9b388; 
+  border-color: #a9b388;     
+  color: #fefae0;               
+}
+.btn-primary:hover {
+  background-color: #c4661f; 
+  border-color:  #c4661f;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.todo-app h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e1e2f;
+    margin-bottom: 25px;
+}
+
+.input-row {
+    display: flex;
+    background: #f1f3f6;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    background:#5F6F52;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #a9b388;
+}
+
+.todo-app ul li {
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 10px 12px 45px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    border-radius: 10px;
+    display: flex;               /* Yatay düzen */
+    justify-content: space-between; /* Metin solda, butonlar sağda */
+    align-items: center;
+}
+
+.todo-app ul li:hover {
+    background: #f9f9f9;
+}
+
+/* Onay kutusu simgesi */
+.todo-app ul li::before {
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid #5F6F52;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.todo-app ul li.checked {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.todo-app ul li.checked::before {
+    background: #5F6F52;
+    background-image: url(
+      "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 5px;
+}
+
+/* Silme butonu */
+.span {
+    background:#a9b388;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.span:hover {
+    background: darkred;
+}
+
+/* Düzenle butonu */
+.editBtn {
+    background: #a9b388;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.editBtn:hover {
+    background: navy;
+}
+
