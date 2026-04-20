@@ -17,6 +17,6 @@ Hobi ekleme örneği:
 ![Hobi Ekleme](screenshot/hobies.png)
 
 Giriş özelliği:
-![](screenshot/login.png)
+![giriş](screenshot/login.png)
 
    
