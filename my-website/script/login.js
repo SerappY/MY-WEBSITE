@@ -1,4 +1,4 @@
-import { users} from "/Interfaces/UserLogin.js";
+import { users} from "../Interfaces/UserLogin.js";
 document.getElementById("loginForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Formun normal gönderimini engeller
 
@@ -10,7 +10,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   );
   if (found) {
     // Doğruysa yönlendirme
-  window.location.href = "/home.html";
+  window.location.href = "home.html";
   } else {
     alert("E-posta veya şifre hatalı!");
   }
