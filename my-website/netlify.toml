@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"                  # çünkü build yok
-  publish = "/build"  # login.html'in bulunduğu klasör
+  publish = "out"  # login.html'in bulunduğu klasör
   base="/"
 
   [[redirects]]
