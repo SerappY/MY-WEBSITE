@@ -1,1 +1,3 @@
-
+[build]
+  command = ""                  # çünkü build yok
+  publish = "MY_WEBSITE/Pages"  # login.html'in bulunduğu klasör
