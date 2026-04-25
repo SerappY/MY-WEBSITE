@@ -10,7 +10,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   );
   if (found) {
     // Doğruysa yönlendirme
-  window.location.href = "/index.html";
+  window.location.href = "/home.html";
   } else {
     alert("E-posta veya şifre hatalı!");
   }
