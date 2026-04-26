@@ -11,12 +11,23 @@ HTML, CSS ve JavaScript kullanılarak yapılmıştır.
 
 ## Ekran Görüntüleri
 Ana sayfa görünümü:
-![Ana Sayfa](screenshot/home.png)
+![Ana Sayfa](screenshots/home.png)
 
 Hobi ekleme örneği:
-![Hobi Ekleme](screenshot/hobies.png)
+![Hobi Ekleme](screenshots/hobies.png)
 
 Giriş özelliği:
-![giriş](screenshot/login.png)
+![giriş](screenshots/login.png)
+
+
+
+## Test Kullanıcı Bilgileri
+Bu proje için örnek/test kullanıcı hesabı oluşturulmuştur.  
+Gerçek kullanıcı bilgileri değildir, sadece deneme amaçlıdır.  
+
+- Kullanıcı adı 1: admin@example.com  
+- Şifre: 1234  
+- Kullanıcı adı 2: test@example.com 
+- Şifre: abcd
 
    
